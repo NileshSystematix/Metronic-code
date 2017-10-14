@@ -1,0 +1,1 @@
+{"version":3,"sources":["app/modules/shared/components/navbar/navbar.component.tns.scss"],"names":[],"mappings":"AAAA;EACE,YAAW,EACZ;;AAED;EACE,iBAAgB;EAChB,YAAW,EACZ;;AAED;EACE,eAAc,EACf","file":"navbar.component.tns.css","sourcesContent":[".nav {\n  padding: 10;\n}\n\n.nav button {\n  margin: 0 20 0 0;\n  color: #777;\n}\n\n.nav button.active {\n  color: #106cc8;\n}\n"]}

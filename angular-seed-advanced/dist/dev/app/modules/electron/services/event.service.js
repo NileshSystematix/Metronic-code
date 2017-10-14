@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Observable_1 = require("rxjs/Observable");
+require("rxjs/add/observable/fromEvent");
+var ElectronEventService = (function () {
+    function ElectronEventService() {
+    }
+    ElectronEventService.on = function (name) {
+        return Observable_1.Observable.fromEvent(window, name);
+    };
+    return ElectronEventService;
+}());
+exports.ElectronEventService = ElectronEventService;
+
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC9tb2R1bGVzL2VsZWN0cm9uL3NlcnZpY2VzL2V2ZW50LnNlcnZpY2UudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFDQSw4Q0FBNkM7QUFDN0MseUNBQXVDO0FBSXZDO0lBQUE7SUFPQSxDQUFDO0lBTGUsdUJBQUUsR0FBaEIsVUFBaUIsSUFBWTtRQUMzQixNQUFNLENBQUMsdUJBQVUsQ0FBQyxTQUFTLENBQUMsTUFBTSxFQUFFLElBQUksQ0FBQyxDQUFDO0lBQzVDLENBQUM7SUFHSCwyQkFBQztBQUFELENBUEEsQUFPQyxJQUFBO0FBUFksb0RBQW9CIiwiZmlsZSI6ImFwcC9tb2R1bGVzL2VsZWN0cm9uL3NlcnZpY2VzL2V2ZW50LnNlcnZpY2UuanMiLCJzb3VyY2VzQ29udGVudCI6WyIvLyBsaWJzXG5pbXBvcnQgeyBPYnNlcnZhYmxlIH0gZnJvbSAncnhqcy9PYnNlcnZhYmxlJztcbmltcG9ydCAncnhqcy9hZGQvb2JzZXJ2YWJsZS9mcm9tRXZlbnQnO1xuXG5kZWNsYXJlIHZhciB3aW5kb3c6IGFueTtcblxuZXhwb3J0IGNsYXNzIEVsZWN0cm9uRXZlbnRTZXJ2aWNlIHtcblxuICBwdWJsaWMgc3RhdGljIG9uKG5hbWU6IHN0cmluZyk6IE9ic2VydmFibGU8YW55PiB7XG4gICAgcmV0dXJuIE9ic2VydmFibGUuZnJvbUV2ZW50KHdpbmRvdywgbmFtZSk7XG4gIH1cblxuICAvLyBUT0RPOiBhZGQgbW9yZSBoZWxwZXJzIGZvciBtZW51IHNldHVwIGFuZCBtb3JlLi4uICBcbn1cbiJdfQ==
